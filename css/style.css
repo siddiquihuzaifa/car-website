@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Playfair Display", serif;
+
+}
+
+html {
+    font-size: 65.5%;
+}
+
+:root {
+    --main-color: #d30d0d;
+    --text-color: #141622;
+}
+/* <!-- top header section end --> */
+.top-header .out-box{
+    width: 100;
+    background: var(--main-color);
+}
+.top-header .out-box .inside-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--text-color);
+    padding: 1rem 0;
+    clip-path: polygon(8% 0%,  92% 0%, 96% 100%, 5% 100%);
+}
+.out-box .inside-box .col-1{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    color: #fff;
+    margin-left: 13rem;
+}
+.out-box .inside-box .col-1 span{
+    font-size: 1.5rem;
+}
+.out-box .inside-box .col-1 span i{
+    color: var(--main-color);
+    padding-right: 0.5rem;
+    font-size: 1.3rem;
+
+}
+.out-box .inside-box .col-2{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    color: #fff;
+    margin-right: 13rem;
+}
+.out-box .inside-box .col-2 a,
+.out-box .inside-box .col-2 span,
+.out-box .inside-box .col-2 .social i{
+    font-size: 1.0rem;
+    color: #fff;
+    transition: 0.4s;
+}
+.out-box .inside-box .col-2 .social {
+    display: flex;
+    gap: 0.9rem;
+}
+.out-box .inside-box .col-2 a i{
+    padding-right: 0.5rem;
+}
+.out-box .inside-box .col-2 .social i:hover,
+.out-box .inside-box .col-2 a:hover{
+    color: var(--main-color);
+}
+/* ============== media query============= */
+@media (max-width:1150px) {
+    .out-box.inside-box .col1{
+        margin-left: 8rem;
+    }
+    .out-box.inside-box .col2{
+        margin-right: 8rem;
+    }
+}
+@media (max-width:991px) {
+    .top-header{
+        display: none;
+    }
+}
