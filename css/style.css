@@ -243,7 +243,8 @@ nav .navbar ul li .drop-down li:hover a {
     font-size: 1.6rem;
     padding-left: 0.5rem;
 }
-.drop-down li .drop-down-two{
+
+.drop-down li .drop-down-two {
     width: 180px;
     position: absolute;
     left: 180px;
@@ -260,6 +261,47 @@ nav .navbar ul li .drop-down li:hover a {
     overflow: hidden;
     display: none;
 }
+
 .drop-down li:hover .drop-down-two {
     display: flex;
+}
+
+.drop-down li .chev {
+    position: absolute;
+    left: 150px;
+    top: 5px;
+    color: var(--text-color);
+}
+
+.drop-down li:hover .chev {
+    color: var(--main-color);
+}
+
+@media (max-widh:1370px) {
+    nav .navbar ul li {
+        padding: 2.5rem 0;
+    }
+
+    nav .others {
+        gap: 1rem;
+    }
+
+    nav .navbar,
+    .navlinks {
+        gap: 0.5rem;
+    }
+}
+
+@media (max-widh:1190px) {
+    nav .others .addBtn {
+        display: none;
+    }
+}
+@media (max-widh:1008px){
+    nav .navbar .navlinks{
+        display: none;
+    }
+    nav .others i.cart{
+        display: none;
+    }
 }
